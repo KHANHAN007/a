@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe-infor</title>
+    <link rel="stylesheet" href="../css/recipe-card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="recipes-container">
+        <div class="headers">
+            <div class="header-box">
+                <div class="titleHeader">Recipes</div>
+                <div class="contentHeader">Search, check and create new recipes</div>
+            </div>
+            <div class="add-recipe">
+                add
+            </div>
+        </div>
+        <div class="form">
+            <input type="text" class="search-food">
+            <div class="filter-container">
+                <div class="btn-filter"><img src="../assets/images/Border (1).png" alt=""></div>
+                <select class="category-filter">
+                    <option value="Nutrient" selected disabled>Sort by nutrient</option>
+                </select>
+                </option>
+            </div>
+            <select class="category-filter">
+                <option value="Category" selected disabled>Category</option>
+            </select>
+        </div>
+        <div class="myRecipes-container">
+            <div class="favorite-container">
+                <div class="favorite-logo"></div>
+                <div class="favorite-title">Favorites</div>
+                <div class="favorite-quantity">0</div>
+            </div>
+            <div class="tool-container">
+                <div class="btn-choises"></div>
+                <div class="btn-fix">border_color</div>
+                <div class="btn-create">All Recipes</div>
+            </div>
+        </div>
+        <div class="recipe-list">
+            <div class="recipe-element">
+                <div class="recipe-represent">
+                    <div class="community-recipes">
+                        <div class="logo-recipe"></div>
+                        <div class="community-content">Community Recipes</div>
+                    </div>
+                    <div class="recipe-img"></div>
+                </div>
+                <div class="recipe-container">
+                    <div class="recipe-content">Turmeric Roasted Cauliflower
+                        Salad (lowfodmap)</div>
+                    <div class="author-like">
+                        <div class="author">
+                            <div class="avatar"></div>
+                            <span>Joana Jardim</span>
+                        </div>
+                        <div class="like-container">
+                            <div class="like-img">favorite_border</div>
+                            <div class="quantity">37</div>
+                        </div>
+                    </div>
+                    <div class="typeOfFood">
+                        <div class="typeOfFood-img"></div>
+                        <div class="typeOfFood-content">Vegatarian dishes</div>
+                    </div>
+                    <div class="recipe-nutrition">
+                        <div class="nutrient-element">
+                            <div class="title-nutrient">by</div>
+                            <div class="title-nutrient">100g</div>
+                        </div>
+                        <div class="nutrient-element">
+                            <div class="title-nutrient">Energy</div>
+                            <div class="value">143 kcal</div>
+                        </div>
+                        <div class="nutrient-element">
+                            <div class="title-nutrient">Fat</div>
+                            <div class="value">6g</div>
+                        </div>
+                        <div class="nutrient-element">
+                            <div class="title-nutrient">Carbohydrate</div>
+                            <div class="value">18g</div>
+                        </div>
+                        <div class="nutrient-element">
+                            <div class="title-nutrient">Protein</div>
+                            <div class="value">5g</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="prev"></button>
+            <button class="page">1</button>
+            <span class="space">...</span>
+            <button class="next"></button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</body>
+
+</html>

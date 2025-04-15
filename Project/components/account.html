@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉnh sửa thông tin</title>
+    <link rel="stylesheet" href="../css/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="containerss">
+        <h1>USER INFORMATION</h1>
+
+        <div class="flex">
+            <div class="avatar-box">
+                <div class="avatar-wrapper">
+                    <img id="avatarPreview"
+                        src="https://lumiere-a.akamaihd.net/v1/images/a_avatarpandorapedia_jakesully_16x9_1098_02_b13c4171.jpeg?region=340%2C0%2C1081%2C1081"
+                        alt="Avatar">
+                    <input id="avatarInput" type="file" accept="image/*">
+                </div>
+                <div class="icon"><i class="fa-solid fa-camera" id="icon"></i></div>
+                <p class="note">Kích thước ảnh nhỏ nhất: 200x200px, PNG hoặc JPG</p>
+            </div>
+
+            <div class="form-box">
+                <div class="form-grid">
+                    <div>
+                        <label for="name">Username</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" disabled>
+                    </div>
+                    <div>
+                        <label for="dob">Ngày sinh</label>
+                        <input type="date" id="dob">
+                    </div>
+                    <div>
+                        <label for="phone">Số điện thoại</label>
+                        <input type="text" id="phone">
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <button id="updatePassword">🔐 Đổi mật khẩu</button>
+                    <button id="saveInfo">✏️ Đổi thông tin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="../js/account.js"></script> -->
+</body>
+
+</html>

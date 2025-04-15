@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrium - Đăng nhập</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</head>
+
+<body>
+    <div class="error-mess">
+        <div class="header">
+            <div class="fram">
+                <img src="../assets/images/remove_circle.png" alt="">
+                <span>Error</span>
+            </div>
+            <div class="close-btn"></div>
+        </div>
+        <div class="content">Mật khẩu không được bỏ trống<br>Email không được bỏ trống</div>
+    </div>
+    <div class="success-mess">
+        <div class="icon-succes"></div>
+        <div class="content-succes">Đăng nhập thành công</div>
+    </div>
+    <div class="main">
+        <div class="logo"></div>
+        <div class="container">
+            <h2>Please sign in</h2>
+            <div class="input-container">
+                <div class="site">
+                    <input required type="email" id="email" class="siteName">
+                    <label for="email" class="label">Email</label>
+                    <div class="error" id="email-error"></div>
+                </div>
+                <div class="site">
+                    <input required type="password" id="password" class="siteName">
+                    <label for="password" class="label">Password</label>
+                    <div class="show-hide" data-target="password"
+                        style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
+                        <lord-icon src="https://cdn.lordicon.com/dicvhxpz.json" trigger="hover" stroke="light"
+                            style="width: 24px; height: 24px;">
+                        </lord-icon>
+                        <div class="error" id="password-error"></div>
+                    </div>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <p>Don't have an account, <a href="../pages/register.html">click here!</a></p>
+                <div class="btn-login">Sign in</div>
+            </div>
+            <div class="no-copyright">&#169; 2025 - Rikkei Education</div>
+        </div>
+        <script src="../js/auth.js"></script>
+</body>
+
+</html>
